@@ -1,8 +1,41 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background: #f8f8f8;
     text-align: center;
 }
 .scoreboard {
     margin-top: 50px;
+} */
+
+
+
+.scoreboard {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.scoreboard h2 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.scoreboard p {
+    font-size: 1.5em;
+    margin: 5px 0;
+    color: #666;
+}
+
+#game-timer, #penalty-timer {
+    font-size: 2em;
+    font-weight: bold;
+    color: #d9534f;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
 }

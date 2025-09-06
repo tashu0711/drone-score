@@ -10,4 +10,7 @@ urlpatterns = [
     path("reset-timer/", views.reset_timer, name="reset_timer"),
     path("toggle-timer/", views.toggle_timer, name="toggle_timer"),
     path("reset-penalty/", views.reset_penalty, name="reset_penalty"),
+    path("get-game-state-json/", views.get_game_state_json, name="get_game_state_json"),
 ]
+
+
