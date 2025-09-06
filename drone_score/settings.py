@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "scoreboard",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'drone_score.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -65,6 +66,8 @@ TEMPLATES = [
         },
     },
 ]
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 WSGI_APPLICATION = 'drone_score.wsgi.application'
 

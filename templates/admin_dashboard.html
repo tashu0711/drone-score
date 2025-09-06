@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Admin Dashboard</h1>
+
+<h3>Scores</h3>
+<a href="{% url 'increment_score' 'red' %}">+ Red</a> |
+<a href="{% url 'decrement_score' 'red' %}">- Red</a><br>
+<a href="{% url 'increment_score' 'blue' %}">+ Blue</a> |
+<a href="{% url 'decrement_score' 'blue' %}">- Blue</a>
+
+<h3>Round</h3>
+<a href="{% url 'next_round' %}">Next Round</a>
+
+<h3>Game Timer</h3>
+<a href="{% url 'reset_timer' %}">Reset</a> |
+<a href="{% url 'toggle_timer' %}">{{ state.game_running|yesno:"Stop,Start" }}</a>
+
+<h3>Penalty</h3>
+<a href="{% url 'reset_penalty' %}">Reset Penalty (10s)</a>
+{% endblock %}

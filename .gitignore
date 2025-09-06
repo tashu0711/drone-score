@@ -1,0 +1,19 @@
+# Django SQLite DB
+db.sqlite3
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env (agar project ke andar hota to)
+venv/
+sumitv/
+
+# Environment variables
+.env
+
+# VSCode / PyCharm configs
+.vscode/
+.idea/

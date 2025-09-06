@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="scoreboard">
+  <h2>{{ state.team_red_name }}: {{ state.team_red_score }}</h2>
+  <h2>{{ state.team_blue_name }}: {{ state.team_blue_score }}</h2>
+  <p>Round: {{ state.round_number }}</p>
+  <p>Game Time: {{ state.game_time }} sec</p>
+  <p>Penalty: {{ state.penalty_time }} sec</p>
+</div>
+{% endblock %}
